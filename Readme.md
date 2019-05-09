@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Temirlan Aitkali](https://up.htmlacademy.ru/htmlcss/25/user/1080013).
-* Наставник: `Неизвестно`.
+* Наставник: [Удовенко Марина](https://htmlacademy.ru/profile/id7570).
 
 ---
 
