@@ -9,16 +9,28 @@
   <nav class="main-navigation">
     <img src="img/logo.png" width="163" height="35" alt="Логотип Device">
     <ul class="user-navigation">
-      <!-- Поиск по сайту форма -->
-        <li><a href="Login.html">Войти</a></li>
-          <li><a href="Compare.html">Сравнить</a></li>
-            <li><a href="Basket.html">Корзина</a></li>
+      <form action="/echo" method="post">
+
+      <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту">
+
+    </form>
+        <li><a class="login-link" href="Login.html">Войти</a></li>
+          <li><a class="compare-link" href="Compare.html">Сравнить</a></li>
+            <li><a class="basket-link" href="Basket.html">Корзина</a></li>
     </ul>
     <ul class="site-navigation">
-      <li><a href="Catalog.html">Каталог товаров</a></li>
-      <li><a href="Delivery.html">Доставка</a></li>
-      <li><a href="Guarantees.html">Гарантии</a></li>
-      <li><a href="Contacts.html">Контакты</a></li>
+      <li><a class="catalog-link" href="Catalog.html">Каталог товаров</a></li>
+      <li><a class="delivery-link" href="Delivery.html">Доставка</a></li>
+      <li><a class="guarantees-link" href="Guarantees.html">Гарантии</a></li>
+      <li><a class="contacts-link" href="Contacts.html">Контакты</a></li>
+    </ul>
+    <ul class="catalog-items">
+      <li><a class="virtual-link" href="Virtual-reality.html">Виртуальная реальность</a></li>
+      <li><a class="fitness-link" href="Fitness.html">Фитнес-браслеты</a></li>
+      <li><a class="cuadro-link" href="Cuadro.html">Квадрокоптеры</a></li>
+      <li><a class="monopods-link" href="Monopods.html">Моноподы для селфи</a></li>
+      <li><a class="Smart-link" href="Smart.html">Умные часы</a></li>
+      <li><a class="Camera-link" href="Camera.html">Экшн-камеры</a></li>
     </ul>
   </nav>
 </header>
@@ -35,29 +47,63 @@
         <li class="About_us-item"><b>Автотрейдинг</b></li>
           <li class="About_us-item"><b>ЖелДорЭкспедиция</b></li>
     </ul>
-    <a class="button" href="more-info.html">Подробнее о нас</a>
+    <a class="more-info" href="more-info.html">Подробнее о нас</a>
   </section>
 
   <section class="Contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-    <!-- Google api form -->
-    <a class="button" href="more-info.html">Напишите нам</a>
+    <figure class="map">
+    <img src="img/map.png" width="560" height="222" alt="Логотип Device">
+    </figure>
+    <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+    <a class="write-us" href="write-us.html">Напишите нам</a>
+  </section>
+
+  <section class="modal modal-sent">
+    <h2 class="visually-hidden">Форма отправки заявки</h2>
+    <form class="login-form" action="/echo" method="post">
+      <button class="close" type="submit" aria-label="Кнопка закрыть форму">Закрыть</button>
+      <p>
+<label>Ваше имя:
+<input type="text" name="login" placeholder="Имя Фамилия">
+</label>
+<label>Ваш email:
+<input type="email" name="email" placeholder="email@example.com">
+</label>
+</p>
+<p>
+<label>Текст письма:
+<textarea name="message" placeholder="В свободной форме" rows="10" cols="90">
+</textarea>
+</label>
+</p>
+<p>
+<button class="submit-button" type="submit">Отправить</button>
+</p>
+    </form>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden">Схема проезда</h2>
+      <button class="close" type="submit" aria-label="Кнопка закрыть форму">Закрыть</button>
+<p>
+  <img src="img/map.png" width="560" height="222" alt="Логотип Device">
+</p>
   </section>
 </main>
+
 <footer>
-  <img src="img/map.png" width="560" height="222" alt="Логотип Device">
-  <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
   <nav class="main-navigation">
     <ul class="user-navigation">
-        <li><a href="Login.html">Войти</a></li>
-          <li><a href="Compare.html">Сравнить</a></li>
-            <li><a href="Basket.html">Корзина</a></li>
+        <li><a class="login-link" href="Login.html">Войти</a></li>
+          <li><a class="compare-link" href="Compare.html">Сравнить</a></li>
+            <li><a class="basket-link" href="Basket.html">Корзина</a></li>
     </ul>
     <ul class="site-navigation">
-      <li><a href="Delivery.html">Доставка</a></li>
-      <li><a href="Guarantees.html">Гарантии</a></li>
-      <li><a href="Contacts.html">Контакты</a></li>
+      <li><a class="delivery-link" href="Delivery.html">Доставка</a></li>
+      <li><a class="guarantees-link" href="Guarantees.html">Гарантии</a></li>
+      <li><a class="contacts-link" href="Contacts.html">Контакты</a></li>
     </ul>
   </nav>
   <p class="footer-contacts">Тел. +7(495)495-95-95</p>
@@ -69,7 +115,7 @@
   </ul>
 </div>
 <p class="footer-copyright">
-  <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+  <a class="html-academy-link" href="https://htmlacademy.ru">HTML Academy</a>
 </p>
 </footer>
   </body>

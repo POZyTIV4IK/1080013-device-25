@@ -9,7 +9,13 @@
       <nav class="main-navigation">
         <img src="img/logo.png" width="163" height="35" alt="Логотип Device">
         <ul class="user-navigation">
-          <!-- Поиск по сайту форма -->
+
+          <form action="/echo" method="post">
+
+          <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту">
+
+        </form>
+
             <li><a href="Login.html">Войти</a></li>
               <li><a href="Compare.html">Сравнить</a></li>
                 <li><a href="Basket.html">Корзина</a></li>
@@ -19,6 +25,14 @@
           <li><a href="Delivery.html">Доставка</a></li>
           <li><a href="Guarantees.html">Гарантии</a></li>
           <li><a href="Contacts.html">Контакты</a></li>
+        </ul>
+        <ul class="catalog-items">
+          <li><a class="virtual-link" href="Virtual-reality.html">Виртуальная реальность</a></li>
+          <li><a class="fitness-link" href="Fitness.html">Фитнес-браслеты</a></li>
+          <li><a class="cuadro-link" href="Cuadro.html">Квадрокоптеры</a></li>
+          <li><a class="monopods-link" href="Monopods.html">Моноподы для селфи</a></li>
+          <li><a class="Smart-link" href="Smart.html">Умные часы</a></li>
+          <li><a class="Camera-link" href="Camera.html">Экшн-камеры</a></li>
         </ul>
       </nav>
     </header>
@@ -31,7 +45,47 @@
 </ul>
 <section class="filters">
    <h2 class="visually-hidden">Фильтр товаров</h2>
-   <!-- Здесь будет форма -->
+   <form class="filter-sort">
+   <fieldset>
+     <legend>Цвет</legend>
+     <ul>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="Black" checked>
+              Черный
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="White">
+              Белый
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="Blue" checked>
+              Синий
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="Red" checked>
+              Красный
+            </li>
+            <li class="filter-option">
+              <input class="filter-input-checkbox" type="checkbox" name="Purple">
+              Розовый
+            </li>
+          </ul>
+
+   </fieldset>
+   <fieldset>
+     <legend>Bluetooth</legend>
+     <label>
+       <input type="radio" name="yes" value="yes"  checked>Да
+     </label>
+     <br>
+     <label>
+       <input type="radio" name="no" value="no">Нет
+     </label>
+   </fieldset>
+ </form>
+ <p>
+ <button class="show" type="submit">Показать</button>
+</p>
  </section>
 
  <section class="Sorting">
