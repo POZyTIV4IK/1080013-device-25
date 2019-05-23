@@ -3,62 +3,64 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Девайс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
 <header class="main-header">
   <nav class="main-navigation">
-    <img src="img/logo.png" width="163" height="35" alt="Логотип Device">
+    <a class="logo" href="#"><img src="img/logo.png" width="163" height="35" class="image" alt="Логотип Device"></a>
     <ul class="user-navigation">
       <form action="/echo" method="post">
 
       <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту">
 
     </form>
-        <li><a class="login-link" href="Login.html">Войти</a></li>
-          <li><a class="compare-link" href="Compare.html">Сравнить</a></li>
-            <li><a class="basket-link" href="Basket.html">Корзина</a></li>
+        <li><a class="login-link" href="login.html">Войти</a></li>
+          <li><a class="compare-link" href="compare.html">Сравнить</a></li>
+            <li><a class="basket-link" href="basket.html">Корзина</a></li>
     </ul>
     <ul class="site-navigation">
-      <li><a class="catalog-link" href="Catalog.html">Каталог товаров</a></li>
-      <li><a class="delivery-link" href="Delivery.html">Доставка</a></li>
-      <li><a class="guarantees-link" href="Guarantees.html">Гарантии</a></li>
-      <li><a class="contacts-link" href="Contacts.html">Контакты</a></li>
+      <li><a class="catalog-link" href="catalog.html">Каталог товаров</a></li>
+      <li><a class="delivery-link" href="delivery.html">Доставка</a></li>
+      <li><a class="guarantees-link" href="guarantees.html">Гарантии</a></li>
+      <li><a class="contacts-link" href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="catalog-items">
-      <li><a class="virtual-link" href="Virtual-reality.html">Виртуальная реальность</a></li>
-      <li><a class="fitness-link" href="Fitness.html">Фитнес-браслеты</a></li>
-      <li><a class="cuadro-link" href="Cuadro.html">Квадрокоптеры</a></li>
-      <li><a class="monopods-link" href="Monopods.html">Моноподы для селфи</a></li>
-      <li><a class="Smart-link" href="Smart.html">Умные часы</a></li>
-      <li><a class="Camera-link" href="Camera.html">Экшн-камеры</a></li>
+      <li><a class="virtual-link" href="virtual-reality.html">Виртуальная реальность</a></li>
+      <li><a class="fitness-link" href="fitness.html">Фитнес-браслеты</a></li>
+      <li><a class="cuadro-link" href="quadro.html">Квадрокоптеры</a></li>
+      <li><a class="monopods-link" href="monopods.html">Моноподы для селфи</a></li>
+      <li><a class="Smart-link" href="smart.html">Умные часы</a></li>
+      <li><a class="Camera-link" href="camera.html">Экшн-камеры</a></li>
     </ul>
   </nav>
 </header>
-<main class="Container">
+<main class="container">
 
   <h1 class="visually-hidden">Device</h1>
-
-  <section class="About_us">
+<div class="index-columns">
+  <section class="about-us">
     <h2>О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
     <p>Мы можем доставить ваш товар в самые отдаленные точки России! Device работает со многими транспортными компаними:</p>
-    <ul class="About_us-companies">
-      <li class="About_us-item"><b>Деловые Линии</b></li>
-        <li class="About_us-item"><b>Автотрейдинг</b></li>
-          <li class="About_us-item"><b>ЖелДорЭкспедиция</b></li>
+    <ul class="about-us-companies">
+      <li class="about-us-item"><b>Деловые Линии</b></li>
+        <li class="about-us-item"><b>Автотрейдинг</b></li>
+          <li class="about-us-item"><b>ЖелДорЭкспедиция</b></li>
     </ul>
-    <a class="more-info" href="more-info.html">Подробнее о нас</a>
+    <a class="button" href="more-info.html">Подробнее о нас</a>
   </section>
 
-  <section class="Contacts">
+  <section class="contacts">
     <h2>Контакты</h2>
     <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
     <figure class="map">
     <img src="img/map.png" width="560" height="222" alt="Логотип Device">
     </figure>
-    <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-    <a class="write-us" href="write-us.html">Напишите нам</a>
+    <a class="button" href="write-us.html">Напишите нам</a>
   </section>
+</div>
 
   <section class="modal modal-sent">
     <h2 class="visually-hidden">Форма отправки заявки</h2>
@@ -94,16 +96,20 @@
 </main>
 
 <footer>
-  <nav class="main-navigation">
-    <ul class="user-navigation">
-        <li><a class="login-link" href="Login.html">Войти</a></li>
-          <li><a class="compare-link" href="Compare.html">Сравнить</a></li>
-            <li><a class="basket-link" href="Basket.html">Корзина</a></li>
+  <div class="index-footer">
+  <a class="logo" href="#"><img src="img/logo-yellow.png" width="163" height="35" class="image" alt="Логотип Device"></a>
+  <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
+  <nav class="footer-main-navigation">
+
+    <ul class="footer-user-navigation">
+        <li><a href="login.html">Войти</a></li>
+          <li><a href="compare.html">Сравнить</a></li>
+            <li><a href="basket.html">Корзина</a></li>
     </ul>
-    <ul class="site-navigation">
-      <li><a class="delivery-link" href="Delivery.html">Доставка</a></li>
-      <li><a class="guarantees-link" href="Guarantees.html">Гарантии</a></li>
-      <li><a class="contacts-link" href="Contacts.html">Контакты</a></li>
+    <ul class="footer-site-navigation">
+      <li><a href="delivery.html">Доставка</a></li>
+      <li><a href="guarantees.html">Гарантии</a></li>
+      <li><a href="contacts.html">Контакты</a></li>
     </ul>
   </nav>
   <p class="footer-contacts">Тел. +7(495)495-95-95</p>
@@ -115,8 +121,9 @@
   </ul>
 </div>
 <p class="footer-copyright">
-  <a class="html-academy-link" href="https://htmlacademy.ru">HTML Academy</a>
+  <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
 </p>
+</div>
 </footer>
   </body>
 </html>
