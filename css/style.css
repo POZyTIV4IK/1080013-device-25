@@ -249,6 +249,8 @@ a:active .image {
 .breadcrumbs {
   list-style: none;
     color: #000000;
+    font-size: 14px;
+    line-height: 24px;
 }
 
 .breadcrumbs  a {
@@ -322,7 +324,7 @@ a:active .image {
 }
 
 .catalog-item-price {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Gilroy Light", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   text-align: right;
