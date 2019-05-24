@@ -50,7 +50,7 @@ a {
 
 .site-navigation {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   list-style: none;
@@ -123,7 +123,7 @@ a:active .image {
 
 .index-columns h2 {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -132,7 +132,7 @@ a:active .image {
 
 .about-us li {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 16px;
   line-height: 40px;
   color: #000000;
@@ -142,7 +142,7 @@ a:active .image {
 
 .button {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   text-align: center;
@@ -165,7 +165,7 @@ a:active .image {
 
 .footer-site-navigation {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   list-style: none;
@@ -246,7 +246,7 @@ a:active .image {
 
 .page-title {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 47px;
   line-height: 48px;
   color: #000000;
@@ -297,7 +297,7 @@ a:active .image {
 
 .filter-sort legend {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
 
@@ -314,7 +314,7 @@ a:active .image {
 
 .catalog a {
   font-family: "Gilroy Extrabold", Arial, sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 18px;
   line-height: 24px;
   color: #000000;
@@ -333,7 +333,7 @@ a:active .image {
 
 .catalog-item-price {
   font-family: "Gilroy Light", Arial, sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   font-size: 16px;
   line-height: 24px;
   text-align: right;
