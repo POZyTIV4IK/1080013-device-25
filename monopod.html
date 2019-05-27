@@ -8,25 +8,24 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <img src="img/logo.png" width="163" height="35" alt="Логотип Device">
-        <ul class="user-navigation">
 
+      <nav class="main-navigation">
+    <a class="header-logo" href="#"><img src="img/logo.png" width="163" height="35" class="image" alt="Логотип Device"></a>
+        <ul class="user-navigation">
           <li><form action="/echo" method="post">
 
           <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту">
 
         </form></li>
-
-            <li><a href="login.html">Войти</a></li>
-              <li><a href="compare.html">Сравнить</a></li>
-                <li><a href="basket.html">Корзина</a></li>
+            <li><a class="login-link" href="login.html">Войти</a></li>
+              <li><a class="compare-link" href="compare.html">Сравнить</a></li>
+                <li><a class="basket-link" href="basket.html">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
-          <li><a href="catalog.html">Каталог товаров</a></li>
-          <li><a href="delivery.html">Доставка</a></li>
-          <li><a href="guarantees.html">Гарантии</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
+          <li><a class="catalog-link" href="catalog.html">Каталог товаров</a></li>
+          <li><a class="delivery-link" href="delivery.html">Доставка</a></li>
+          <li><a class="guarantees-link" href="guarantees.html">Гарантии</a></li>
+          <li><a class="contacts-link" href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="catalog-items">
           <li><a class="virtual-link" href="virtual-reality.html">Виртуальная реальность</a></li>
@@ -38,13 +37,18 @@
         </ul>
       </nav>
     </header>
+
+
 <main class="container">
 <h1 class="page-title">Моноподы для селфи</h1>
+
 <ul class="breadcrumbs">
   <li><a href="index.html">Главная</a></li>
   <li><a class="back-page" href="catalog.html">Каталог товаров</a></li>
   <li class="breadcrumbs-current">Моноподы для селфи</li>
 </ul>
+
+<div class="catalog-columns">
 <section class="filters">
    <h2 class="visually-hidden">Фильтр товаров</h2>
    <form class="filter-sort">
@@ -90,10 +94,9 @@
 </p>
  </section>
 
- <section class="sorting">
+ <!-- <section class="sorting">
     <h2 class="visually-hidden">Фильтр сортировки</h2>
-    <!-- Здесь будет форма -->
-  </section>
+  </section> -->
 
  <section class="catalog">
    <h2 class="visually-hidden">Список моноподов</h2>
@@ -156,36 +159,51 @@
             </li>
           </ul>
  </section>
+</div>
 </main>
-<footer>
-  <div class="index-footer">
-  <a class="logo" href="#"><img src="img/logo-yellow.png" width="163" height="35" class="image" alt="Логотип Device"></a>
-  <p class="footer-contacts">г. Москва, ул. Строителей, 15</p>
-  <nav class="footer-main-navigation">
+<footer class="main-footer">
 
-    <ul class="footer-user-navigation">
-        <li><a href="login.html">Войти</a></li>
-          <li><a href="compare.html">Сравнить</a></li>
-            <li><a href="basket.html">Корзина</a></li>
-    </ul>
-    <ul class="footer-site-navigation">
+
+  <div class="container">
+<div logo-wrapper>
+  <a class="footer-logo" href="#"><img src="img/logo-yellow.png" width="163" height="35" class="image" alt="Логотип Device"></a>
+
+<p class="footer-address">г. Москва, ул. Строителей, 15</p>
+</div>
+<div info-wrapper>
+
+
+  <ul class="footer-site-navigation">
       <li><a href="delivery.html">Доставка</a></li>
       <li><a href="guarantees.html">Гарантии</a></li>
       <li><a href="contacts.html">Контакты</a></li>
     </ul>
-  </nav>
-  <p class="footer-contacts">Тел. +7(495)495-95-95</p>
-  <div class="footer-social">
-  <ul>
-    <li><a class="social-button" href="#">Facebook</a></li>
-    <li><a class="social-button" href="#">Instagram</a></li>
-    <li><a class="social-button" href="#">Twitter</a></li>
-  </ul>
+
+    <ul class="footer-social">
+      <li><a class="social-button" href="#">Facebook</a></li>
+      <li><a class="social-button" href="#">Instagram</a></li>
+      <li><a class="social-button" href="#">Twitter</a></li>
+    </ul>
+
+
 </div>
+<div icon-wrapper>
+
+  <ul class="footer-user-navigation">
+      <li><a href="login.html">Войти</a></li>
+        <li><a href="compare.html">Сравнить</a></li>
+          <li><a href="basket.html">Корзина</a></li>
+  </ul>
+
+  <p class="footer-contacts">Тел. +7(495)495-95-95</p>
+
+
 <p class="footer-copyright">
   <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
 </p>
 </div>
+</div>
+
 </footer>
   </body>
 </html>
