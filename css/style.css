@@ -494,16 +494,18 @@ a:active .image {
   width: 260px;
   min-height: 195px;
   margin: 0;
+  margin-right: 100px;
 }
 
 .info-wrapper {
-  width: 438px;
+  width: 440px;
   min-height: 195px;
   margin: 0;
+
 }
 
 .icon-wrapper {
-  width: 362px;
+  width: 360px;
   min-height: 195px;
   margin: 0;
 
@@ -525,14 +527,14 @@ a:active .image {
   width: 440px;
   height: 24px;
     margin-top: 139px;
-    margin-left: 100px;
+
 }
 
 .footer-social {
   width: 440px;
   height: 24px;
   margin-top: 67px;
-  margin-left: 100px;
+
 }
 
 
