@@ -285,8 +285,20 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   text-transform: uppercase;
   border: none;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+  position: relative;
+  width: 260px;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
   background-color: #f0c52e;
+  width: 260px;
+  height: 8px;
+  z-index: -1;
+  left: 0px;
+  top: 8px;
 }
 
 
@@ -385,10 +397,6 @@ input[type="radio"].visually-hidden {
 
 .footer-copyright a:active {
   opacity: 0.3;
-}
-
-.modal {
-  display: none;
 }
 
 .page-title {
@@ -629,11 +637,10 @@ input[type="radio"].visually-hidden {
 .main-footer {
   color: #ffffff;
   background-color: #464646;
-  padding: 0;
    min-height: 320px;
-   display: flex;
-
 }
+
+
 
 .main-footer .container {
   display: flex;
@@ -732,7 +739,6 @@ height: 407px;
 }
 
 .map-button {
-  width: 216px;
   margin: 0;
   position: absolute;
   bottom: 0;
@@ -761,7 +767,8 @@ height: 407px;
 
 .footer-user-navigation {
   padding: 0;
-  margin: 0;
+
+    margin: 0 auto;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -769,7 +776,13 @@ height: 407px;
     height: 36px;
     margin-top: 65px;
 
+    flex-direction: column;
+
 }
+
+
+
+
 
 
 .footer-user-navigation .login-link {
@@ -829,6 +842,7 @@ height: 407px;
 }
 
 .html-button {
+  display: flex;
   background-color: transparent;
   fill: #f0c52e;
   margin-left: 320px;
@@ -861,4 +875,37 @@ padding: 0;
 justify-content: center;
   width: 32px;
   height: 32px;
+}
+
+.button::before {
+  background: none;
+}
+
+.modal {
+}
+
+.modal-sent {
+  background: rgba(255, 0, 255, 1);
+box-shadow: inset 0 0 0 2px rgb(234, 255, 45);
+position: absolute;
+top: 0px;
+margin: 0 100px;
+margin-top: 1057px;
+  width: 772px;
+  height: 353px;
+  box-shadow: 0px 0px 10px black;
+  padding: 94px 100px;
+
+}
+
+.close {
+  top: 22px;
+  right: 27px;
+  position: absolute;
+  display: inline-block;
+  vertical-align: middle;
+  border: none;
+  width: 55px;
+  height: 55px;
+  background: transparent;
 }
