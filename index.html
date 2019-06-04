@@ -9,7 +9,7 @@
   <body>
 
 
-<header class="main-header">
+<header class="main-header-index container">
 
   <nav class="main-navigation">
 <a class="header-logo" href="#"><img src="img/logo.png" width="163" height="35" class="image" alt="Логотип Device"></a>
@@ -31,12 +31,12 @@
       <li><a class="contacts-link" href="contacts.html">Контакты</a></li>
     </ul>
     <ul class="catalog-items">
-      <li><a class="virtual-link" href="virtual-reality.html">Виртуальная реальность</a></li>
-      <li><a class="fitness-link" href="fitness.html">Фитнес-браслеты</a></li>
-      <li><a class="cuadro-link" href="quadro.html">Квадрокоптеры</a></li>
-      <li><a class="monopods-link" href="monopod.html">Моноподы для селфи</a></li>
-      <li><a class="Smart-link" href="smart.html">Умные часы</a></li>
-      <li><a class="Camera-link" href="camera.html">Экшн-камеры</a></li>
+      <li><a class="header-item1" href="virtual-reality.html">Виртуальная реальность</a></li>
+      <li><a class="header-item1" href="fitness.html">Фитнес-браслеты</a></li>
+      <li><a class="header-item1" href="quadro.html">Квадрокоптеры</a></li>
+      <li><a class="header-item1" href="monopod.html">Моноподы для селфи</a></li>
+      <li><a class="header-item2" href="smart.html">Умные часы</a></li>
+      <li><a class="header-item1" href="camera.html">Экшн-камеры</a></li>
     </ul>
   </nav>
 </header>
@@ -71,7 +71,7 @@
 
   <section class="modal modal-sent container">
     <h2 class="visually-hidden">Форма отправки заявки</h2>
-    <form class="login-form" action="/echo" method="post">
+    <form class="sent-form" action="/echo" method="post">
       <button class="close" type="submit" aria-label="Кнопка закрыть форму">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
       	 width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
@@ -79,34 +79,39 @@
       	C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573
       	l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z"/>
       </svg></button>
-      <p>
-<label>Ваше имя:
-<input type="text" name="login" placeholder="Имя Фамилия">
-</label>
-<label>Ваш email:
-<input type="email" name="email" placeholder="email@example.com">
-</label>
+      <p class="small-form">
+<label for="name">Ваше имя:</label>
+<input id="name" type="text" name="login" placeholder="Имя Фамилия">
 </p>
-<p>
-<label>Текст письма:
-<textarea name="message" placeholder="В свободной форме" rows="10" cols="90">
+<p class="small-form">
+<label for="email">Ваш email:</label>
+<input id="email" type="email" name="email" placeholder="email@example.com">
+</p>
+<p class="large-form">
+<label for= "textfield">Текст письма:</label>
+<textarea id="textfield" name="message" placeholder="В свободной форме" rows="10" cols="90">
 </textarea>
-</label>
 </p>
 <p>
-<button class="submit-button" type="submit">Отправить</button>
+<button class="button submit-button" type="submit">Отправить</button>
 </p>
     </form>
   </section>
 
-  <section class="modal modal-map">
+  <section class="modal modal-map container">
     <h2 class="visually-hidden">Схема проезда</h2>
-      <button class="close" type="submit" aria-label="Кнопка закрыть форму">Закрыть</button>
-<p>
-  <img src="img/map.png" width="560" height="222" alt="Логотип Device">
-</p>
+    <button class="close" type="submit" aria-label="Кнопка закрыть форму">
+      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+       width="55px" height="55px" viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
+    <path fill="#F0C52E" d="M27.5,0C12.312,0,0,12.312,0,27.5C0,42.688,12.312,55,27.5,55C42.688,55,55,42.688,55,27.5
+      C55,12.312,42.688,0,27.5,0z M38.976,37.072l-1.486,1.426L27.5,28.924l-9.987,9.574l-1.488-1.426l9.988-9.573l-9.987-9.573
+      l1.487-1.425l9.987,9.573l9.988-9.573l1.487,1.425L28.986,27.5L38.976,37.072z"/>
+    </svg></button>
+  <img src="img/map-big.png" width="960" height="560" alt="Логотип Device">
   </section>
 </main>
+
+
 
 <footer class="main-footer">
 
@@ -166,9 +171,9 @@
 <div class="icon-wrapper">
 
   <ul class="footer-user-navigation">
-      <li><a class="login-link" href="login.html">Войти</a></li>
-        <li><a class="compare-link" href="compare.html">Сравнить</a></li>
-          <li><a class="basket-link" href="basket.html">Корзина</a></li>
+      <li><a class="footer-login-link" href="login.html">Войти</a></li>
+        <li><a class="footer-compare-link" href="compare.html">Сравнить</a></li>
+          <li><a class="footer-basket-link" href="basket.html">Корзина</a></li>
   </ul>
 
   <p class="footer-contacts">Тел. +7(495)495-95-95</p>

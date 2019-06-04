@@ -7,16 +7,17 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header-monopod container">
 
       <nav class="main-navigation">
     <a class="header-logo" href="#"><img src="img/logo.png" width="163" height="35" class="image" alt="Логотип Device"></a>
         <ul class="user-navigation">
           <li><form action="/echo" method="post">
 
-          <input type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту">
+          <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту">
 
-        </form></li>
+        </form>
+          </li>
             <li><a class="login-link" href="login.html">Войти</a></li>
               <li><a class="compare-link" href="compare.html">Сравнить</a></li>
                 <li><a class="basket-link" href="basket.html">Корзина</a></li>
@@ -28,19 +29,20 @@
           <li><a class="contacts-link" href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="catalog-items">
-          <li><a class="virtual-link" href="virtual-reality.html">Виртуальная реальность</a></li>
-          <li><a class="fitness-link" href="fitness.html">Фитнес-браслеты</a></li>
-          <li><a class="cuadro-link" href="quadro.html">Квадрокоптеры</a></li>
-          <li><a class="monopods-link" href="monopod.html">Моноподы для селфи</a></li>
-          <li><a class="Smart-link" href="smart.html">Умные часы</a></li>
-          <li><a class="Camera-link" href="camera.html">Экшн-камеры</a></li>
+          <li><a class="header-item1" href="virtual-reality.html">Виртуальная реальность</a></li>
+          <li><a class="header-item1" href="fitness.html">Фитнес-браслеты</a></li>
+          <li><a class="header-item1" href="quadro.html">Квадрокоптеры</a></li>
+          <li><a class="header-item1" href="monopod.html">Моноподы для селфи</a></li>
+          <li><a class="header-item2" href="smart.html">Умные часы</a></li>
+          <li><a class="header-item1" href="camera.html">Экшн-камеры</a></li>
         </ul>
       </nav>
     </header>
 
 
 <main class="container">
-<h1 class="page-title">Моноподы для селфи</h1>
+  <div class="mono-wrapper">
+<h1 class="visually-hidden">Моноподы для селфи</h1>
 
 <ul class="breadcrumbs">
   <li><a href="index.html">Главная</a></li>
@@ -56,41 +58,44 @@
      <legend>Цвет</legend>
      <ul>
             <li class="filter-option">
-              <input class="filter-input-checkbox" type="checkbox" name="Black" checked>
-              Черный
+              <input id="black" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Black" checked>
+              <label for="black">Черный</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input-checkbox" type="checkbox" name="White">
-              Белый
+              <input  id="white" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="White">
+              <label for="white">Белый</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input-checkbox" type="checkbox" name="Blue" checked>
-              Синий
+              <input  id="blue" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Blue" checked>
+              <label for="blue">Синий</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input-checkbox" type="checkbox" name="Red" checked>
-              Красный
+              <input  id="red" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Red" checked>
+              <label for="red">Красный</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input-checkbox" type="checkbox" name="Purple">
-              Розовый
+              <input  id="purple" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Purple">
+              <label for="purple">Розовый</label>
             </li>
           </ul>
 
    </fieldset>
    <fieldset>
      <legend>Bluetooth</legend>
-     <label>
-       <input type="radio" name="yes" value="yes"  checked>Да
-     </label>
-     <br>
-     <label>
-       <input type="radio" name="no" value="no">Нет
-     </label>
+     <ul>
+     <li class="filter-option">
+       <input class="visually-hidden filter-input filter-input-radio" type="radio" name="yes" value="yes" id="yes" checked>
+            <label for="yes">Да</label>
+     </li>
+     <li class="filter-option">
+       <input class="visually-hidden filter-input filter-input-radio" type="radio" name="no" value="no" id="no">
+            <label for="no">Нет</label>
+     </li>
+   </ul>
    </fieldset>
  </form>
  <p>
- <button class="button" type="submit">Показать</button>
+ <button class="button filter-button" type="submit">Показать</button>
 </p>
  </section>
 
@@ -108,12 +113,13 @@
     <img src="img/item-1.jpg" width="360" height="380" alt="Любительская селфи-палка">
   </a>
 </p>
+<div class="catalog-item-price">
 <h3>
   <a href="catalog-item1.html">Любительская селфи-палка
   </a>
 </h3>
-<p class="catalog-item-price">2 900 ₽
-</p>
+<b>500 ₽</b>
+</div>
             </li>
             <li class="catalog-item">
 
@@ -122,12 +128,13 @@
     <img src="img/item-2.jpg" width="360" height="380" alt="Профессиональная селфи-палка">
   </a>
 </p>
+<div class="catalog-item-price">
 <h3>
-  <a href="catalog-item2.html">Профессиональная селфи-палка
+  <a href="catalog-item2.html">Профессиональная<br>селфи-палка
   </a>
 </h3>
-<p class="catalog-item-price">2 900 ₽
-</p>
+<b>1 500 ₽</b>
+</div>
             </li>
             <li class="catalog-item">
 
@@ -136,31 +143,37 @@
     <img src="img/item-3.jpg" width="360" height="380" alt="Непотопляемая селфи-палка">
   </a>
 </p>
+<div class="catalog-item-price">
 <h3>
   <a href="catalog-item3.html">Непотопляемая селфи-палка
   </a>
 </h3>
-<p class="catalog-item-price">2 900 ₽
-</p>
+<b>2 500 ₽</b>
+</div>
             </li>
             <li class="catalog-item">
 
-              <p class="catalog-item4-image">
+              <p class="catalog-item-image new">
   <a href="catalog-item1.html">
-    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка <<Следуй за мной>>">
+    <img src="img/item-4.jpg" width="360" height="380" alt="Селфи-палка «Следуй за мной»">
   </a>
 </p>
+<div class="catalog-item-price">
 <h3>
-  <a href="catalog-item4.html">Селфи-палка <<Следуй за мной>>>
+  <a href="catalog-item4.html">Селфи-палка «Следуй за мной»
   </a>
 </h3>
-<p class="catalog-item-price">2 900 ₽
-</p>
+<b>4 900 ₽</b>
+</div>
             </li>
           </ul>
  </section>
 </div>
+</div>
 </main>
+
+
+
 <footer class="main-footer">
 
 
@@ -219,9 +232,9 @@
 <div class="icon-wrapper">
 
   <ul class="footer-user-navigation">
-      <li><a class="login-link" href="login.html">Войти</a></li>
-        <li><a class="compare-link" href="compare.html">Сравнить</a></li>
-          <li><a class="basket-link" href="basket.html">Корзина</a></li>
+      <li><a class="footer-login-link" href="login.html">Войти</a></li>
+        <li><a class="footer-compare-link" href="compare.html">Сравнить</a></li>
+          <li><a class="footer-basket-link" href="basket.html">Корзина</a></li>
   </ul>
 
   <p class="footer-contacts">Тел. +7(495)495-95-95</p>
