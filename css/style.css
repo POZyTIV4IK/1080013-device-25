@@ -46,6 +46,7 @@ a {
 
 .main-header-monopod {
   min-height: 317px;
+  margin-bottom: 43px;
 }
 
 .main-navigation {
@@ -533,14 +534,6 @@ flex-wrap: wrap;
 }
 
 
-.filters {
-  min-width: 268px;
-  background-color: #eeeeee;
-  margin-right: 72px;
-
-  /* Временно для сетки */
-  min-height: 1217px;
-}
 
 .filter-sort {
   font-size: 14px;
@@ -636,12 +629,6 @@ padding-left: 40px;
   background-position: 0 0;
 }
 
-.catalog {
-  width: 760px;
-
-  /* Временно для сетки */
-  min-height: 1217px;
-}
 
 .catalog p {
 margin: 0;
@@ -748,11 +735,6 @@ padding: 0;
 
 
 
-.container {
-  width: 1160px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 
 
 .index-columns-wrapper {
@@ -860,10 +842,7 @@ padding: 0;
   margin-top: 63px;
 }
 
-.catalog-columns {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 img {
   max-width: 100%;
@@ -1156,9 +1135,7 @@ margin-top: 1852px;
 }
 
 
-.mono-wrapper {
-  padding-left: 60px;
-}
+
 
 .filter-button {
   z-index: 0;
@@ -1198,4 +1175,65 @@ margin-top: 1852px;
   border: 2px solid #000000;
   opacity: 0.1;
   border-radius: 28px;
+}
+
+
+.monopod-title {
+  font-family: "Gilroy Extrabold", Arial, sans-serif;
+  font-weight: 800;
+  line-height: 47px;
+  font-size: 48px;
+  margin: 0;
+  padding: 0;
+  margin-top: 43px;
+  margin-bottom: 35px;
+  color: #000000;
+}
+
+.container-monopod-title {
+  width: 1040px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.container{
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.catalog-columns {
+  display: flex;
+  justify-content: center;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.filters {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 68px;
+  width: 260px;
+  min-width: 200px;
+  background-color: #eeeeee;
+  min-height: 1217px;
+}
+
+.filters::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+.catalog {
+  margin-left: 72px;
+  width: 760px;
+  min-height: 1217px;
 }
