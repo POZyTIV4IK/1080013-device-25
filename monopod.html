@@ -56,10 +56,13 @@
 
 
 <section class="filters">
-   <h2 class="visually-hidden">Фильтр товаров</h2>
+  <div class="main-filter">
+  <h2>Фильтр:</h2>
+</div>
    <form class="filter-sort">
+
    <fieldset>
-     <legend>Цвет</legend>
+     <legend class="filter-type">Цвет</legend>
      <ul>
             <li class="filter-option">
               <input id="black" class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Black" checked>
@@ -85,7 +88,7 @@
 
    </fieldset>
    <fieldset>
-     <legend>Bluetooth</legend>
+     <legend class="filter-type">Bluetooth</legend>
      <ul>
      <li class="filter-option">
        <input class="visually-hidden filter-input filter-input-radio" type="radio" name="yes" value="yes" id="yes" checked>
@@ -111,7 +114,26 @@
 
 
  <section class="catalog">
-   <h2 class="visually-hidden">Список моноподов</h2>
+         <h2 class="visually-hidden">Список моноподов</h2>
+<div class="sort-monopod-wrap">
+
+   <h3>Сортировка :</h3>
+
+   <ul class="sort-monopod-list">
+     <li class="current"><a href="#">По цене</a></li>
+     <li><a href="#">По типу</a></li>
+     <li><a href="#">По популярности</a></li>
+   </ul>
+
+   <ul class="sort-monopod-updown">
+  <li><a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка вверх" width="11" height="10"></a></li>
+  <li class="current"><a href="#"><img src="img/icon-down-dir.svg" alt="Сортировка вниз" width="11" height="10"></a></li>
+</ul>
+
+</div>
+
+
+      <div class="item-monopod-wrap">
           <ul class="catalog-list">
             <li class="catalog-item">
 
@@ -174,6 +196,7 @@
 </div>
             </li>
           </ul>
+        </div>
  </section>
 
 </div>
