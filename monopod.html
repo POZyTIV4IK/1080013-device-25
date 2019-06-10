@@ -60,7 +60,18 @@
   <h2>Фильтр:</h2>
 </div>
    <form class="filter-sort">
-
+<fieldset>
+    <legend class="filter-type">Стоимость</legend>
+           <div class="scale">
+             <div class="bar"></div>
+             <div class="toggle1"></div>
+             <div class="toggle2"></div>
+           </div>
+           <div class="price-controls">
+            <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+          </div>
+</fieldset>
    <fieldset>
      <legend class="filter-type">Цвет</legend>
      <ul>
@@ -91,11 +102,11 @@
      <legend class="filter-type">Bluetooth</legend>
      <ul>
      <li class="filter-option">
-       <input class="visually-hidden filter-input filter-input-radio" type="radio" name="yes" value="yes" id="yes" checked>
+       <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="yes" id="yes" checked>
             <label for="yes">Да</label>
      </li>
      <li class="filter-option">
-       <input class="visually-hidden filter-input filter-input-radio" type="radio" name="no" value="no" id="no">
+       <input class="visually-hidden filter-input filter-input-radio" type="radio" name="bluetooth" value="no" id="no">
             <label for="no">Нет</label>
      </li>
    </ul>
@@ -115,10 +126,8 @@
 
  <section class="catalog">
          <h2 class="visually-hidden">Список моноподов</h2>
-<div class="sort-monopod-wrap">
-
+<section class="sort-monopod-wrap">
    <h3>Сортировка :</h3>
-
    <ul class="sort-monopod-list">
      <li class="current"><a href="#">По цене</a></li>
      <li><a href="#">По типу</a></li>
@@ -129,8 +138,7 @@
   <li><a href="#"><img src="img/icon-up-dir.svg" alt="Сортировка вверх" width="11" height="10"></a></li>
   <li class="current"><a href="#"><img src="img/icon-down-dir.svg" alt="Сортировка вниз" width="11" height="10"></a></li>
 </ul>
-
-</div>
+</section>
 
 
       <div class="item-monopod-wrap">
@@ -195,7 +203,17 @@
 <b>4 900 ₽</b>
 </div>
             </li>
+            <ul class="pagination-list">
+                <li class="pagination-title"><a href="#">Назад</a></li>
+                <li><ul class="pagination-list-number">
+  <li class="pagination-item pagination-item-current"><a>1</a></li>
+  <li class="pagination-item"><a href="#">2</a></li>
+  <li class="pagination-item"><a href="#">3</a></li>
+</ul></li>
+    <li class="pagination-title"><a href="#">Вперед</a></li>
+</ul>
           </ul>
+
         </div>
  </section>
 
