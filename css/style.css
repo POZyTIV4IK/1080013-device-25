@@ -1494,7 +1494,6 @@ margin-top: 1852px;
 .quick-links {
   height: 160px;
   width: 100%;
-  margin-top: 480px;
   margin-bottom: 260px;
 }
 
@@ -1681,4 +1680,141 @@ position: absolute;
 .vive:focus {
   background-image: url("../img/logo-4.png");
   opacity: 1;
+}
+
+.slider-wrap {
+  position: relative;
+  width: auto;
+  height: 480px;
+}
+
+.slider {
+  position: absolute;
+  bottom: 85px;
+  display: flex;
+  height: 486px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 60px;
+}
+
+.slider-img-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin: 0 auto;
+}
+
+
+.slider-specifications {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.slide-title {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+  font-family: "Gilroy Extrabold", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.slide-decription {
+  width: 500px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  margin-bottom: 55px;
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 135px;
+  right: 0;
+  z-index: 1;
+  font-size: 0;
+  margin-right: 80px;
+}
+
+.slider-controls label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-left: 21px;
+  vertical-align: top;
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-button {
+  margin-bottom: 63px;
+}
+.slider-item-specifications {
+  margin-right: 80px;
+}
+
+.slider-item-specifications:last-child {
+  margin-right: 0px;
+}
+
+.slider-item-specifications p {
+  margin: 0;
+  padding: 0;
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 48px;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+.slider-item-specifications h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #464646;
+}
+
+
+
+
+.slide {
+  display: none;
+}
+
+#product-1:checked ~ .slider #slide1,
+#product-2:checked ~ .slider #slide2,
+#product-3:checked ~ .slider #slide3 {
+  display: block;
+}
+
+#product-1:checked ~ .slider label[for="product-1"],
+#product-2:checked ~ .slider label[for="product-2"],
+#product-3:checked ~ .slider label[for="product-3"] {
+  background-color: #ffffff;
 }
