@@ -25,8 +25,8 @@
     <ul class="site-navigation">
       <li><a class="catalog-link site-navigation-link" href="catalog.html">Каталог товаров</a>
         <div class="catalog-items-wrap">
-        <div class="catalog-items-height">
-        <ul class="catalog-items">
+            <div class="catalog-items-height">
+            <ul class="catalog-items">
           <li><a class="header-item1" href="virtual-reality.html">Виртуальная реальность</a></li>
           <li><a class="header-item2" href="fitness.html">Фитнес-браслеты</a></li>
           <li><a class="header-item3" href="quadro.html">Квадрокоптеры</a></li>
@@ -35,7 +35,7 @@
           <li><a class="header-item1" href="camera.html">Экшн-камеры</a></li>
         </ul>
       </div>
-      </div>
+    </div>
       </li>
       <li><a class="delivery-link site-navigation-link" href="delivery.html">Доставка</a></li>
       <li><a class="guarantees-link site-navigation-link" href="guarantees.html">Гарантия</a></li>
@@ -106,8 +106,7 @@
 
         <li class="slider-item slide slider-item-3" id="slide3">
           <h2 class="slide-title">
-            Порхает как бабочка,
-            жалит как пчела!
+            Порхает как бабочка,<br>жалит как пчела!
           </h2>
           <p class="slide-decription">
             Этот обычный, на первый взгляд, квадрокоптер оснащен
@@ -149,7 +148,7 @@
   		c0-6.463,3.78-11.702,8.441-11.702c4.662,0,8.442,5.239,8.442,11.702C57.582,33.379,53.802,38.618,49.14,38.618z"/>
   </g>
   </svg></a></li>
-  <li><a href="#" class="popular-item"><span class="item-span">Моноподы<br>для селфи</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <li><a href="#" class="popular-item popular-item-2"><span class="item-span">Моноподы<br>для селфи</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="86px" height="117px" viewBox="0 0 86 117" enable-background="new 0 0 86 117" xml:space="preserve">
   <g>
   	<path fill="#363636" d="M82.821,4.011H3.33c-1.761,0-3.188,1.427-3.188,3.188v46.413c0,1.763,1.427,3.189,3.188,3.189h79.492
@@ -329,19 +328,41 @@
 </section>
 </div>
 
+
+
+
 <div class="advantages-wrap">
   <div class="container">
     <section class="advantages">
+
+              <input class="visually-hidden" type="radio" id="follow-1" name="follow" checked>
+              <input class="visually-hidden" type="radio" id="follow-2" name="follow">
+              <input class="visually-hidden" type="radio" id="follow-3" name="follow">
       <section class = "advantages-buttons">
-        <a class="button advantages-button" href="more-info.html">Доставка</a>
-        <a class="button advantages-button" href="more-info.html">Гарантии</a>
-        <a class="button advantages-button" href="more-info.html">Кредит</a>
+
+        <label class="button advantages-button-1" for="follow-1">Доставка</label>
+        <label class="button advantages-button-2" for="follow-2">Гарантия</label>
+        <label class="button advantages-button-3" for="follow-3">Кредит</label>
       </section>
-      <section class = "advantages-description">
+      <section class="advantages-slider">
+      <ul class="advantages-list">
+      <li class = "advantages-description advantages-description-1 advantages-slide" id="advantages1">
         <h2>Доставка</h2>
         <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-      </section>
+      </li>
+
+      <li class = "advantages-description advantages-description-2 advantages-slide" id="advantages2">
+        <h2>Гарантия</h2>
+        <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.<br> Товар, не дом, конечно же.</p>
+      </li>
+
+      <li class = "advantages-description advantages-description-3 advantages-slide" id="advantages3">
+        <h2>Кредит</h2>
+        <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные <br> условия кредита. Выгодные для нашего банка, разумеется.</p>
+      </li>
+    </ul>
     </section>
+  </section>
   </div>
 </div>
 
@@ -368,7 +389,7 @@
   <section class="about-us">
     <h2 class="over">О нас</h2>
     <p>Огромный выбор гаджетов не оставит равнодушным гика,<br> который есть в каждом из нас.</p>
-    <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! Device работает со многими транспортными компаниями:</p>
+    <p>Мы можем доставить ваш товар в самые отдаленные точки<br> России! DEVICE работает со многими транспортными компаниями:</p>
     <ul class="about-us-companies">
       <li class="about-us-item"><b>Деловые Линии</b></li>
         <li class="about-us-item"><b>Автотрейдинг</b></li>
@@ -388,8 +409,18 @@
   </section>
 </div>
 </div>
+</div>
 
-  <section class="modal modal-sent container">
+
+
+
+
+
+
+
+
+<div class="modal-wrap">
+  <section class="modal modal-sent">
     <h2 class="visually-hidden">Форма отправки заявки</h2>
     <form class="sent-form" action="/echo" method="post">
       <button class="close" type="submit" aria-label="Кнопка закрыть форму">
@@ -404,7 +435,7 @@
 <input id="name" type="text" name="login" placeholder="Имя Фамилия">
 </p>
 <p class="small-form">
-<label for="email">Ваш email:</label>
+<label for="email">Ваш e-mail:</label>
 <input id="email" type="email" name="email" placeholder="email@example.com">
 </p>
 <p class="large-form">
@@ -418,7 +449,10 @@
     </form>
   </section>
 
-  <section class="modal modal-map container">
+
+
+
+  <section class="modal modal-map">
     <h2 class="visually-hidden">Схема проезда</h2>
     <button class="close" type="submit" aria-label="Кнопка закрыть форму">
       <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -447,9 +481,9 @@
 
 
   <ul class="footer-site-navigation">
-      <li><a href="delivery.html">Доставка</a></li>
-      <li><a href="guarantees.html">Гарантии</a></li>
-      <li><a href="contacts.html">Контакты</a></li>
+      <li class="footer-site-item footer-site-item1"><a href="delivery.html">Доставка</a></li>
+      <li class="footer-site-item footer-site-item2"><a href="guarantees.html">Гарантия</a></li>
+      <li class="footer-site-item footer-site-item3"><a href="contacts.html">Контакты</a></li>
     </ul>
 
     <ul class="footer-social">
