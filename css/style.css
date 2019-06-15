@@ -49,8 +49,7 @@ a {
 }
 
 .main-header-monopod {
-  min-height: 317px;
-  margin-bottom: 43px;
+  min-height: 143px;
 }
 
 .main-navigation {
@@ -68,13 +67,20 @@ a {
   position: relative;
 }
 
+.main-header-monopod .main-navigation {
+  height: 143px;
+}
+
 .header-logo {
   width: 163px;
   height: 35px;
   position: absolute;
-  bottom: 35px;
   top: -20px;
   left: 60px;
+}
+
+.main-header-monopod .header-logo {
+  top: -17px;
 }
 
 .user-navigation {
@@ -242,8 +248,9 @@ border: none;
 
 .catalog-items-height {
   position: absolute;
+  left: 0px;
 background: #f7e296;
-width: 1100px;
+width: 1160px;
 height: 163px;
 z-index: 4;
 }
@@ -256,6 +263,7 @@ z-index: 4;
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-left: 60px;
   padding-top: 21px;
   position: absolute;
   font-family: "Open Sans Light", Arial, sans-serif;
@@ -569,7 +577,7 @@ input[type="radio"].visually-hidden {
     line-height: 24px;
     padding: 0;
     margin: 0;
-    margin-bottom: 48px;
+    margin-bottom: 46px;
     min-height: 24px;
     display: flex;
 justify-content: flex-start;
@@ -1290,9 +1298,9 @@ top: 1852px;
   font-size: 48px;
   margin: 0;
   padding: 0;
-  margin-top: 43px;
-  margin-bottom: 35px;
+  margin-bottom: 24px;
   color: #000000;
+  margin-top: 38px;
 }
 
 .container-monopod-title {
