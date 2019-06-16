@@ -16,6 +16,9 @@
     <ul class="user-navigation">
       <li><form action="/echo" method="post">
       <input class="search" type="search" name="search" id="search" placeholder="Поиск по сайту" aria-label="Форма поиска по сайту">
+      <div class="search-button-hover">
+      <a class="search-button" href="#">Найти</a>
+      </div>
       </form>
       </li>
         <li><a class="login-link" href="login.html">Войти</a></li>
@@ -130,7 +133,7 @@
   <h1 class="visually-hidden">Device</h1>
 <section class="quick-links">
 <ul class="popular">
-  <li><a href="#" class="popular-item"><span class="item-span">Виртуальная реальность</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Виртуальная реальность</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="97px" height="55px" viewBox="0 0 97 55" enable-background="new 0 0 97 55" xml:space="preserve">
   <g id="Layer_1_1_">
   </g>
@@ -148,7 +151,7 @@
   		c0-6.463,3.78-11.702,8.441-11.702c4.662,0,8.442,5.239,8.442,11.702C57.582,33.379,53.802,38.618,49.14,38.618z"/>
   </g>
   </svg></a></li>
-  <li><a href="#" class="popular-item popular-item-2"><span class="item-span">Моноподы<br>для селфи</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <li class="popular-item-wrap"><a href="#" class="popular-item popular-item-2"><span class="item-span">Моноподы<br>для селфи</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="86px" height="117px" viewBox="0 0 86 117" enable-background="new 0 0 86 117" xml:space="preserve">
   <g>
   	<path fill="#363636" d="M82.821,4.011H3.33c-1.761,0-3.188,1.427-3.188,3.188v46.413c0,1.763,1.427,3.189,3.188,3.189h79.492
@@ -163,7 +166,7 @@
   <g id="Layer_1_1_">
   </g>
 </svg></a></li>
-  <li><a href="#" class="popular-item"><span class="item-span">Экшн-камеры</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Экшн-камеры</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="71px" height="87px" viewBox="0 0 71 87" enable-background="new 0 0 71 87" xml:space="preserve">
   <g>
   	<path fill="#363636" d="M53.349,1.49c0-0.736-0.578-1.49-1.311-1.49H9.053C8.32,0,7.672,0.754,7.672,1.49v3.522h45.676V1.49z"/>
@@ -187,7 +190,7 @@
   	<circle fill="#363636" cx="39.828" cy="45.906" r="1.435"/>
   </g>
   </svg></a></li>
-  <li><a href="#" class="popular-item"><span class="item-span">Фитнес-браслеты</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Фитнес-браслеты</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="107px" height="65px" viewBox="0 0 107 65" enable-background="new 0 0 107 65" xml:space="preserve">
   <g>
   	<path fill="#363636" d="M98.967,4.074c0.752,1.441,1.209,3.08,1.209,4.818v21.102c0,4.616-3.092,8.527-7.246,9.9
@@ -260,7 +263,7 @@
   </g>
   </svg>
 </a></li>
-  <li><a href="#" class="popular-item"><span class="item-span">Умные часы</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Умные часы</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="56px" height="98px" viewBox="0 0 56 98" enable-background="new 0 0 56 98" xml:space="preserve">
   <g>
   	<path fill="#363636" d="M54.494,32.197h-1.515v-4.64c0-5.052-4.087-9.186-9.082-9.186H9.082C4.086,18.372,0,22.505,0,27.557v42.868
@@ -281,7 +284,7 @@
   		h26.032c1.684,0,3.266-1.362,3.517-3.026c0-0.001,0-0.001,0-0.002l1.615-10.767C44.765,83.354,44.176,82.671,43.333,82.671z"/>
   </g>
   </svg></a></li>
-  <li><a href="#" class="popular-item"><span class="item-span">Квадрокоптеры</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Квадрокоптеры</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
   	 width="132px" height="69px" viewBox="0 0 132 69" enable-background="new 0 0 132 69" xml:space="preserve">
   <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
   	<path fill="#363636" d="M120.522,5117.421c-55.449-4.873-102.139-15.928-114.77-26.724c-7.227-6.162-7.227-6.162-2.324-11.562
