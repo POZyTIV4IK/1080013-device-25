@@ -2304,3 +2304,11 @@ img {
 .sort-monopod-list li:active {
   opacity: 1;
 }
+
+.map-show {
+  display: block;
+}
+
+.sent-show {
+  display: block;
+}
