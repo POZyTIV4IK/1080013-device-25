@@ -2359,6 +2359,11 @@ img {
   animation: bounce 1s;
 }
 
+.map-show {
+  display: block;
+  animation: bounce 1s;
+}
+
 .modal-error {
   animation: shake 0.6s;
 }
