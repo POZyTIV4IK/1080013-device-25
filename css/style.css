@@ -862,17 +862,12 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
-.index-columns-wrapper {
-  min-width: 1160px;
-  margin: 0 auto;
-}
-
 .index-columns {
   margin: 0;
   padding: 0 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px
+  margin-bottom: 42px;
 }
 
 .about-us {
@@ -1018,8 +1013,9 @@ img {
   flex-wrap: nowrap;
   margin-top: 64px;
   flex-direction: row;
-  padding-left: 62px;
   justify-content: flex-end;
+  width: 360px;
+  position: relative;
 }
 
 .footer-user-navigation .footer-login-link {
@@ -1042,7 +1038,7 @@ img {
 .footer-user-navigation .footer-login-link-name {
   display: flex;
   position: absolute;
-  right: 383px;
+  left: -92px;
 }
 
 .footer-user-navigation .footer-login-link-name::before {
@@ -1108,10 +1104,6 @@ img {
   width: auto;
 }
 
-.html-button::before {
-  background: none;
-}
-
 .footer-logo-wrapper {
   width: 260px;
   min-height: 195px;
@@ -1144,6 +1136,11 @@ img {
   background: none;
 }
 
+.modal {
+  margin-left :100px;
+  margin-right :100px;
+}
+
 .modal p {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
@@ -1155,12 +1152,6 @@ img {
   font-weight: 800;
   font-size: 18px;
   line-height: 24px;
-}
-
-.modal-wrap {
-  margin: 0 auto;
-  padding: 0 20px;
-  width: 960px;
 }
 
 .modal-sent {
@@ -1301,24 +1292,20 @@ img {
   font-weight: 800;
   font-size: 14px;
   line-height: 24px;
+  padding: 0;
   content: "NEW";
   position: absolute;
   text-align: center;
-  top: 47px;
-  right: 38px;
-  opacity: 0.2;
-}
-
-.new::after {
-  position: absolute;
-  content: "";
-  top: 29px;
-  right: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 30px;
+  right: 26px;
   width: 56px;
   height: 56px;
   border: 2px solid #000000;
-  opacity: 0.1;
   border-radius: 50%;
+  opacity: 0.2;
 }
 
 .monopod-title {
@@ -1526,16 +1513,16 @@ img {
   list-style: none;
   display: flex;
   background: #ebebeb;
-  width: 100%;
+  width: 760px;
   height: 70px;
-  margin-bottom: 77px;
+  margin-bottom: 79px;
   padding: 0px;
   justify-content: space-between;
   text-transform: uppercase;
   letter-spacing: 4px;
 }
 
-.pagination-list>li {
+.pagination-list > li {
   padding: 0;
   margin: 0;
   padding-top: 24px;
@@ -2380,5 +2367,25 @@ img {
   left: 0;
   z-index: 1;
 
+  margin: 0;
+}
+
+.slider-item .slide-description-article {
+  margin: 0;
+  padding: 0;
+}
+
+.popular-item-wrap p {
+  padding: 0;
+  margin: 0;
+}
+
+.index-columns .article-no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-item-price span {
+  padding: 0;
   margin: 0;
 }
