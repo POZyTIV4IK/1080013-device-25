@@ -11,7 +11,7 @@
 <body>
   <header class="main-header-index container">
     <nav class="main-navigation">
-      <a class="header-logo" href="#"><img src="img/logo.png" width="163" height="35" class="image" alt="Логотип Device"></a>
+      <a class="header-logo"><img src="img/logo.png" width="163" height="35" class="image" alt="Логотип Device"></a>
       <ul class="user-navigation">
         <li>
           <form action="/echo" method="post">
@@ -58,19 +58,10 @@
             <label for="product-2">Второй</label>
             <label for="product-3">Третий</label>
           </div>
-          <ul class="slider-img-list">
-            <li class="slider-item-img slider-item-img-1 slide" id="img-slide1">
-              <img src="img/slider-1.png" width="384" height="486" class="image" alt="Первый слайд">
-            </li>
-            <li class="slider-item-img slider-item-img-2 slide" id="img-slide2">
-              <img src="img/slider-2.png" width="345" height="485" class="image" alt="Первый слайд">
-            </li>
-            <li class="slider-item-img slider-item-img-3 slide" id="img-slide3">
-              <img src="img/slider-3.png" width="526" height="334" class="image" alt="Первый слайд">
-            </li>
-          </ul>
           <ul class="slider-list">
             <li class="slider-item slide slider-item-1" id="slide1">
+                <img class="slider-item-img-1" src="img/slider-1.png" width="384" height="486" class="image" alt="Первый слайд">
+            <div class="slider-text">
               <h2 class="slide-title">
                 Делай селфи,<br> как Бен Стиллер!
               </h2>
@@ -95,8 +86,13 @@
                   <h3>Материал</h3>
                 </li>
               </ul>
+            </div>
             </li>
+
+
             <li class="slider-item slide slider-item-2" id="slide2">
+                <img class="slider-item-img-2" src="img/slider-2.png" width="345" height="485" class="image" alt="Второй слайд">
+              <div class="slider-text">
               <h2 class="slide-title">
                 Худеем<br> правильно!
               </h2>
@@ -111,8 +107,13 @@
                   <h3>Без подзарядки</h3>
                 </li>
               </ul>
+            </div>
             </li>
+
+
             <li class="slider-item slide slider-item-3" id="slide3">
+              <img class="slider-item-img-3" src="img/slider-3.png" width="526" height="334" class="image" alt="Третий слайд">
+              <div class="slider-text">
               <h2 class="slide-title">
                 <span>Порхает как бабочка,</span>
                 <span>жалит как пчела!</span>
@@ -132,6 +133,7 @@
                   <h3>Радиус поражения</h3>
                 </li>
               </ul>
+            </div>
             </li>
           </ul>
         </section>
@@ -142,7 +144,10 @@
       <section class="quick-links">
         <h2 class="visually-hidden">Быстрый доступ</h2>
         <ul class="popular">
-          <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Виртуальная реальность</span><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+          <li class="popular-item-wrap">
+            <a href="#" class="popular-item">
+              <div class="popular-item-img">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
                 y="0px" width="97px" height="55px" viewBox="0 0 97 55" enable-background="new 0 0 97 55" xml:space="preserve">
                 <g id="Layer_1_1_">
                 </g>
@@ -159,8 +164,13 @@
   		c3.698,0,6.696,4.601,6.696,10.275S16.68,37.192,12.982,37.192z M49.14,38.618c-4.662,0-8.441-5.239-8.441-11.701
   		c0-6.463,3.78-11.702,8.441-11.702c4.662,0,8.442,5.239,8.442,11.702C57.582,33.379,53.802,38.618,49.14,38.618z" />
                 </g>
-              </svg></a></li>
-          <li class="popular-item-wrap"><a href="#" class="popular-item popular-item-2"><span class="item-span"><p>Моноподы</p><p>для селфи</p></span><svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+              </svg>
+            </div>
+              <span class="item-span">Виртуальная реальность</span>
+            </a></li>
+          <li class="popular-item-wrap"><a href="#" class="popular-item">
+<div class="popular-item-img popular-item-img-2">
+            <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                 x="0px" y="0px" width="86px" height="117px" viewBox="0 0 86 117" enable-background="new 0 0 86 117" xml:space="preserve">
                 <g>
                   <path fill="#363636" d="M82.821,4.011H3.33c-1.761,0-3.188,1.427-3.188,3.188v46.413c0,1.763,1.427,3.189,3.188,3.189h79.492
@@ -174,8 +184,13 @@
                 </g>
                 <g id="Layer_2_1_">
                 </g>
-              </svg></a></li>
-          <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Экшн-камеры</span><svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              </svg>
+            </div>
+  <span class="item-span"><p>Моноподы</p><p>для селфи</p></span>
+          </a></li>
+          <li class="popular-item-wrap"><a href="#" class="popular-item">
+            <div class="popular-item-img">
+            <svg version="1.1" id="Layer_3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="71px" height="87px" viewBox="0 0 71 87" enable-background="new 0 0 71 87" xml:space="preserve">
                 <g>
                   <path fill="#363636" d="M53.349,1.49c0-0.736-0.578-1.49-1.311-1.49H9.053C8.32,0,7.672,0.754,7.672,1.49v3.522h45.676V1.49z" />
@@ -198,8 +213,13 @@
                   <circle fill="#363636" cx="55.697" cy="17.565" r="1.435" />
                   <circle fill="#363636" cx="39.828" cy="45.906" r="1.435" />
                 </g>
-              </svg></a></li>
-          <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Фитнес-браслеты</span><svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              </svg>
+            </div>
+          <span class="item-span">Экшн-камеры</span>
+          </a></li>
+          <li class="popular-item-wrap"><a href="#" class="popular-item">
+              <div class="popular-item-img">
+            <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="107px" height="65px" viewBox="0 0 107 65" enable-background="new 0 0 107 65" xml:space="preserve">
                 <g>
                   <path fill="#363636" d="M98.967,4.074c0.752,1.441,1.209,3.08,1.209,4.818v21.102c0,4.616-3.092,8.527-7.246,9.9
@@ -271,8 +291,12 @@
   		c-0.867,0-1.569-0.704-1.569-1.57C20.694,18.036,21.396,17.333,22.263,17.333z" />
                 </g>
               </svg>
+            </div>
+              <span class="item-span">Фитнес-браслеты</span>
             </a></li>
-          <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Умные часы</span><svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+          <li class="popular-item-wrap"><a href="#" class="popular-item">
+              <div class="popular-item-img">
+            <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="56px" height="98px" viewBox="0 0 56 98" enable-background="new 0 0 56 98" xml:space="preserve">
                 <g>
                   <path fill="#363636" d="M54.494,32.197h-1.515v-4.64c0-5.052-4.087-9.186-9.082-9.186H9.082C4.086,18.372,0,22.505,0,27.557v42.868
@@ -292,8 +316,13 @@
                   <path fill="#363636" d="M43.333,82.671H9.646c-0.843,0-1.429,0.683-1.304,1.516l1.615,10.767c0.25,1.666,1.832,3.028,3.516,3.028
   		h26.032c1.684,0,3.266-1.362,3.517-3.026c0-0.001,0-0.001,0-0.002l1.615-10.767C44.765,83.354,44.176,82.671,43.333,82.671z" />
                 </g>
-              </svg></a></li>
-          <li class="popular-item-wrap"><a href="#" class="popular-item"><span class="item-span">Квадрокоптеры</span><svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              </svg>
+            </div>
+              <span class="item-span">Умные часы</span>
+                    </a></li>
+          <li class="popular-item-wrap"><a href="#" class="popular-item">
+              <div class="popular-item-img">
+            <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 width="132px" height="69px" viewBox="0 0 132 69" enable-background="new 0 0 132 69" xml:space="preserve">
                 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
                   <path fill="#363636" d="M120.522,5117.421c-55.449-4.873-102.139-15.928-114.77-26.724c-7.227-6.162-7.227-6.162-2.324-11.562
@@ -335,7 +364,10 @@
   		c4.902,5.4,4.902,5.4-2.324,11.562c-13.408,11.309-59.58,21.851-119.16,26.724
   		C1160.527,5120.253,1150.459,5120.253,1127.764,5117.167z" />
                 </g>
-              </svg></a></li>
+              </svg>
+            </div>
+                      <span class="item-span">Квадрокоптеры</span>
+                    </a></li>
         </ul>
       </section>
     </div>
@@ -347,7 +379,7 @@
           <input class="visually-hidden" type="radio" id="follow-2" name="follow">
           <input class="visually-hidden" type="radio" id="follow-3" name="follow">
           <section class="advantages-buttons">
-            <h3 class="visually-hidden">Кнопки ревосходства</h3>
+            <h3 class="visually-hidden">Кнопки превосходства</h3>
             <label class="button advantages-button-1" for="follow-1">Доставка</label>
             <label class="button advantages-button-2" for="follow-2">Гарантия</label>
             <label class="button advantages-button-3" for="follow-3">Кредит</label>
@@ -396,7 +428,7 @@
             <div class="map-container">
               <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
               <figure class="map">
-                <a class="map-link" href="#">
+                <a class="map-link" href="our-location.html">
                 <img src="img/map.png" width="560" height="222" alt="г. Москва, ул. Строителей, 15">
                 </a>
               </figure>
@@ -447,7 +479,7 @@
   <footer class="main-footer">
     <div class="container">
       <div class="footer-logo-wrapper">
-        <a class="footer-logo" href="#"><img src="img/logo-yellow.png" width="163" height="35" class="image" alt="Логотип Device"></a>
+        <a class="footer-logo"><img src="img/logo-yellow.png" width="163" height="35" class="image" alt="Логотип Device"></a>
         <p class="footer-address">г. Москва, ул. Строителей, 15</p>
       </div>
       <div class="info-wrapper">
@@ -499,7 +531,7 @@
         </ul>
         <p class="footer-contacts">Тел. +7(495)495-95-95</p>
         <p class="footer-copyright">
-          <a class="html-button" href="https://htmlacademy.ru"><span class="visually-hidden">HTML Academy</span>
+          <a class="html-button" href="https://htmlacademy.ru/intensive/htmlcss"><span class="visually-hidden">HTML Academy</span>
             <svg version="1.1" id="Layer_13" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
               xml:space="preserve">
               <path
