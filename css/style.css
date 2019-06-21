@@ -1137,8 +1137,8 @@ img {
 }
 
 .modal {
-  margin-left :100px;
-  margin-right :100px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 
 .modal p {
@@ -1160,8 +1160,8 @@ img {
   z-index: 10;
   background: white;
   height: 363px;
-  position: absolute;
-  top: 1057px;
+  position: fixed;
+  top: 25%;
   box-shadow: 0px 0px 5px black;
   padding: 79px 100px 92px 100px;
 }
@@ -1170,8 +1170,8 @@ img {
   display: none;
   z-index: 10;
   height: 560px;
-  position: absolute;
-  top: 1852px;
+  position: fixed;
+  top: 25%;
   box-shadow: 0px 0px 5px black;
   padding: 0 0;
 }
@@ -2298,10 +2298,6 @@ img {
  border: none;
 }
 
-
-.map-show {
-  display: block;
-}
 
 
 @keyframes bounce {
