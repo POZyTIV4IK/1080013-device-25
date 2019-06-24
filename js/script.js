@@ -11,24 +11,24 @@ var form = popupSent.querySelector(".sent-form");
 var isStorageSupport = true;
 var storage = "";
 
-    try {
-      storage = localStorage.getItem("login");
-    } catch (err) {
-      isStorageSupport = false;
-    }
+try {
+  storage = localStorage.getItem("login");
+} catch (err) {
+  isStorageSupport = false;
+}
 
 
-    popupMapLink.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popupMap.classList.add("map-show");
-    });
+popupMapLink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupMap.classList.add("map-show");
+});
 
-    popupMapClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popupMap.classList.remove("map-show");
-    });
+popupMapClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupMap.classList.remove("map-show");
+});
 
-    window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
   evt.preventDefault();
   if (evt.keyCode === 27) {
     if (popupMap.classList.contains("map-show")) {
@@ -37,41 +37,41 @@ var storage = "";
   }
 });
 
-    popupSentLink.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popupSent.classList.add("sent-show");
+popupSentLink.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupSent.classList.add("sent-show");
 
-      if (storage) {
-        login.value = storage;
-        email.value = storage;
-        mymessage.focus();
-      } else {
-        login.focus();
-      }
+  if (storage) {
+    login.value = storage;
+    email.value = storage;
+    mymessage.focus();
+  } else {
+    login.focus();
+  }
 
-    });
+});
 
-    popupSentClose.addEventListener("click", function (evt) {
-      evt.preventDefault();
-      popupSent.classList.remove("sent-show");
-      popupSent.classList.remove("modal-error");
-    });
+popupSentClose.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupSent.classList.remove("sent-show");
+  popupSent.classList.remove("modal-error");
+});
 
-    form.addEventListener("submit", function (evt) {
-      if (!login.value || !email.value || !mymessage.value) {
-          evt.preventDefault();
-          popupSent.classList.remove("modal-error");
-          popupSent.offsetWidth = popupSent.offsetWidth;
-          popupSent.classList.add("modal-error");
-        }
-      else {
-        if (isStorageSupport) {
-          localStorage.setItem("login", login.value);
-          localStorage.setItem("email", email.value);
-        }}
-    });
+form.addEventListener("submit", function(evt) {
+  if (!login.value || !email.value || !mymessage.value) {
+    evt.preventDefault();
+    popupSent.classList.remove("modal-error");
+    popupSent.offsetWidth = popupSent.offsetWidth;
+    popupSent.classList.add("modal-error");
+  } else {
+    if (isStorageSupport) {
+      localStorage.setItem("login", login.value);
+      localStorage.setItem("email", email.value);
+    }
+  }
+});
 
-    window.addEventListener("keydown", function (evt) {
+window.addEventListener("keydown", function(evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
     if (popupSent.classList.contains("sent-show")) {
